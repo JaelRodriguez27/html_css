@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnologias Emergentes</title>
+  <link rel="stylesheet" href="./Stylos.css">
+</head>
+<body>
+
+  <!-- MENÚ -->
+  <header class="navbar">
+    <a href="#inicio" class="logo">Auto<span>Motors</span></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#autos">Catálogo</a></li>
+        <li><a href="#footer">Nosotros</a></li>
+        <li><a href="#formulario">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <h1>Encuentra el auto de tus sueños</h1>
+    <p>Los mejores vehículos nuevos y seminuevos al mejor precio del mercado.</p>
+    <a href="#autos" class="btn btn-hero">Ver Catálogo</a>
+  </section>
+
+  <!-- CATÁLOGO DE AUTOS -->
+  <section class="catalogo" id="autos">
+    <h2>Nuestros Vehículos Destacados</h2>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-img">
+          <img src="./2024_McLaren_W1_SP25.jpg" alt="Deportivo GT 2025">
+        </div>
+        <div class="card-body">
+          <h3>Deportivo GT 2025</h3>
+          <div class="specs">
+            <span>Gasolina</span>
+            <span>Automático</span>
+            <span>15,000 km</span>
+          </div>
+          <p class="precio">$32,500 USD</p>
+          <a href="#formulario" class="btn">Más Información</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="./emira420s-fs-image01-gradient-desktop.webp" alt="SUV Familiar X-Trail">
+        </div>
+        <div class="card-body">
+          <h3>SUV Familiar X-Trail</h3>
+          <div class="specs">
+            <span>Híbrido</span>
+            <span>Automático</span>
+            <span>5,000 km</span>
+          </div>
+          <p class="precio">$28,900 USD</p>
+          <a href="#formulario" class="btn">Más Información</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="./pagani-huayra-r-1616086455.avif" alt="Sedán Ejecutivo Pro">
+        </div>
+        <div class="card-body">
+          <h3>Sedán Ejecutivo Pro</h3>
+          <div class="specs">
+            <span>Diesel</span>
+            <span>Manual</span>
+            <span>22,000 km</span>
+          </div>
+          <p class="precio">$21,400 USD</p>
+          <a href="#formulario" class="btn">Más Información</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="formulario">
+    <h2>Contáctanos</h2>
+    <form class="form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado! Te contactaremos pronto.'); this.reset();">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono">
+      <textarea rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- PIE -->
+  <footer class="footer" id="footer">
+    <h4>AutoMotors Concesionaria</h4>
+    <p class="datos">📍 Dirección: Av. Principal #123 | 📞 Teléfono: +123 456 7890 | ✉️ Correo: contacto@automotors.com</p>
+    <p class="copy">© 2026 AutoMotors. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
